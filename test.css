@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond
+}
+
+.container {
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 50px;
+    background-color: yellow;
+}
+
+.container div{
+    text-align: center;
+    width: 200px;
+    min-height: 200px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.three {
+    grid-column: 2 / -1;
+}
+
+.one {
+    grid-row: 1 / -1;
+
+    margin-block: auto;
+}
